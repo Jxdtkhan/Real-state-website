@@ -1,0 +1,257 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+.container {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-zoom {
+    width: 100%;
+    height: 75%;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-zoom img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+    cursor: zoom-in;
+}
+
+.image-zoom img:hover {
+    transform: scale(1.1);
+    cursor: zoom-out;
+}
+
+
+
+
+.pic-heade {
+    margin-right: 0; /* Removed margin-right to center the image on smaller screens */
+}
+
+
+
+
+
+
+
+.card {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.card-img-right {
+  width: 50%;
+  transition: transform 0.3s ease;
+}
+.card:hover .card-img-right {
+  transform: scale(1.1);
+}
+.card-body {
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.back-ground-img{
+  background-image: url(../img/header-img.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.back-ground-img{
+  background-image: url(../img/header-img.webp);
+}
+
+.nav-items {
+  list-style: none;
+  padding-top: 15px;
+}
+.benfits {
+  margin-top: 26%;
+ 
+}
+.benfits h3{
+
+  font-size: 40px; 
+  
+}
+.benfits h1{
+  
+     font-size: 150%; 
+     
+ }
+ .benfits p{
+  font-size: 130%;
+
+ }
+ .img-edit{
+  width: 750px;
+  height: 350px;
+ }
+.img-edit:hover{
+  scale: 1.1;
+  transition: 0.5s;
+  cursor: pointer;
+  
+}
+
+
+
+.bg-hero-00{
+  background-color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Container needed to position the overlay. Adjust the width as needed */
+  .image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Make the image to responsive */
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* The overlay effect - lays on top of the container and over the image */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8); /* White see-through */
+    color: #212529;
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    font-size: 25px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* When you mouse over the container, fade in the overlay title */
+  .image-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  
+  
+  
+  @media (max-width: 768px) {
+    .nav-items {
+      flex-direction: column;
+    }
+  
+    .pic-header {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .nav-icons-sect {
+      flex-direction: row;
+    }
+  
+    .overlay {
+      font-size: 18px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .overlay {
+      font-size: 14px;
+      padding: 5px;
+    }
+  
+    .nav-items {
+      gap: 1rem;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
